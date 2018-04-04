@@ -41,4 +41,5 @@ public class ruchgracza : MonoBehaviour {
 	bool naziemi(){
 		return Physics.Raycast(transform.position, Vector3.down, maxDistance: cll.bounds.extents.y+0.1f);
 	}
+	
 }
