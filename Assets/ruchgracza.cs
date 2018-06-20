@@ -8,7 +8,7 @@ public class ruchgracza : MonoBehaviour {
 	private Collider cll;
 	private FixedJoystick joystick;
 	private guzikskakania skok;
-	
+	private ambientScript skryptyOtoczenia;
 	
 
 	void Awake () {
@@ -16,6 +16,7 @@ public class ruchgracza : MonoBehaviour {
 		cll = GetComponent<SphereCollider> ();
 		joystick = FindObjectOfType<FixedJoystick>();
 		skok = FindObjectOfType<guzikskakania>();
+		skryptyOtoczenia = FindObjectOfType<ambientScript>();
 	}
 
 	// Update is called once per frame
@@ -42,4 +43,10 @@ public class ruchgracza : MonoBehaviour {
 		return Physics.Raycast(transform.position, Vector3.down, maxDistance: cll.bounds.extents.y+0.1f);
 	}
 	
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.CompareTag("enemy")){
+			skryptyOtoczenia.death();
+		}
+	}
+
 }
