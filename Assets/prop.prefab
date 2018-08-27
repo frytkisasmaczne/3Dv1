@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33326543521657800}
   - component: {fileID: 23130344502764406}
   - component: {fileID: 114652447035123526}
-  - component: {fileID: 65749862055820470}
+  - component: {fileID: 65920890650518334}
   m_Layer: 0
   m_Name: prop
   m_TagString: itemKtoryDajePkt
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505737264865850}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65749862055820470
+--- !u!65 &65920890650518334
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

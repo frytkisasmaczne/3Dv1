@@ -52,10 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ambientScript.cs" />
+     <Compile Include="Assets\enemyhandler.cs" />
      <Compile Include="Assets\guzikskakania.cs" />
      <Compile Include="Assets\obracanieitemow.cs" />
      <Compile Include="Assets\ruchgracza.cs" />
      <Compile Include="Assets\ruchkamery.cs" />
+     <Compile Include="Assets\texthandler.cs" />
      <Compile Include="Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
      <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />

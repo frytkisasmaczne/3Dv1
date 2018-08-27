@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class obracanieitemow : MonoBehaviour {
 
+	private texthandler licznik;
 	
-	private Text licznik;
 	// Use this for initialization
 	void Awake () {
-		licznik = Text.FindObjectOfType<Text>();
+		licznik = FindObjectOfType<texthandler>();
 	}
 	
 	// Update is called once per frame
@@ -17,10 +16,7 @@ public class obracanieitemow : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.CompareTag("Player")){
-			int lpkt = PlayerPrefs.GetInt("pkt", 0);
-			lpkt++;
-			PlayerPrefs.SetInt("pkt", lpkt);
-			licznik.text = "Zebrane kloce: " + lpkt;
+			licznik.add1more();
 			Destroy(gameObject);
 		}
 	}
